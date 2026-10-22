@@ -1,0 +1,19 @@
+{
+  "_nota": "Ofertas y ciudades de ejemplo para el simulador. Las ofertas son ficticias, en rangos habituales para un primer empleo de técnico/a de FP. El alquiler de habitación de Madrid (587), Barcelona (600), Málaga (437) y Jaén (245) procede del informe de idealista del 1T 2026; Zaragoza, Sevilla, los pisos pequeños y el resto de importes son orientativos y editables por el docente.",
+  "ofertas": [
+    { "id": "admin", "puesto": "Técnico/a en Administración y Finanzas", "brutoAnual": 18500, "pagas": 14, "contrato": "indefinido", "ciudad": "madrid" },
+    { "id": "dam", "puesto": "Desarrollador/a junior (DAM/DAW)", "brutoAnual": 22000, "pagas": 12, "contrato": "indefinido", "ciudad": "barcelona" },
+    { "id": "electro", "puesto": "Técnico/a en Electromecánica de vehículos", "brutoAnual": 20000, "pagas": 14, "contrato": "indefinido", "ciudad": "zaragoza" },
+    { "id": "tcae", "puesto": "Técnico/a en Cuidados Auxiliares de Enfermería", "brutoAnual": 17800, "pagas": 14, "contrato": "temporal", "ciudad": "sevilla" },
+    { "id": "cocina", "puesto": "Cocinero/a (Cocina y Gastronomía)", "brutoAnual": 17094, "pagas": 14, "contrato": "temporal", "ciudad": "malaga" }
+  ],
+  "ciudades": {
+    "madrid":    { "nombre": "Madrid",    "habitacion": 587, "pisoPequeno": 1250, "transporte": 20, "_transporte": "abono joven" },
+    "barcelona": { "nombre": "Barcelona", "habitacion": 600, "pisoPequeno": 1300, "transporte": 25 },
+    "zaragoza":  { "nombre": "Zaragoza",  "habitacion": 340, "pisoPequeno": 750,  "transporte": 20 },
+    "sevilla":   { "nombre": "Sevilla",   "habitacion": 380, "pisoPequeno": 850,  "transporte": 25 },
+    "malaga":    { "nombre": "Málaga",    "habitacion": 437, "pisoPequeno": 1050, "transporte": 25 },
+    "jaen":      { "nombre": "Jaén",      "habitacion": 245, "pisoPequeno": 500,  "transporte": 20 }
+  },
+  "gastosBase": { "suministrosHabitacion": 50, "suministrosPiso": 110, "comida": 250, "movil": 20 }
+}
