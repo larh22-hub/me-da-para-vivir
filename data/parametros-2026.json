@@ -1,0 +1,47 @@
+{
+  "_fuente": "Valores de referencia 2026 para uso didáctico. Revisar cada año. SMI: RD 126/2026 (BOE 19/02/2026). Tipos de cotización: Orden de cotización 2026. Escala de retenciones: art. 85 RIRPF.",
+  "smi": { "mensual14Pagas": 1221, "anual": 17094 },
+  "bases": {
+    "minimaMensual": 1424.50,
+    "maximaMensual": 5101.20,
+    "_nota": "Base mínima = SMI prorrateado (1.221 × 14 / 12). Base máxima: revisar la cifra oficial de 2026; no afecta a sueldos de técnico junior."
+  },
+  "cotizacionTrabajador": {
+    "contingenciasComunes": 0.047,
+    "desempleoIndefinido": 0.0155,
+    "desempleoTemporal": 0.016,
+    "formacionProfesional": 0.001,
+    "mei": 0.0015
+  },
+  "irpf": {
+    "otrosGastosDeducibles": 2000,
+    "minimoPersonal": 5550,
+    "limiteExceso": 0.43,
+    "limiteExentoRetencion": 15876,
+    "deduccionSMI": { "maxima": 590.89, "limiteSuperior": 20048.45, "_fuente": "D.A. 61.ª LIRPF según RDL 5/2026" },
+    "_limite": "Límite de exención de retención para contribuyente sin hijos (art. 81 RIRPF). Revisar la cifra vigente en 2026.",
+    "reduccionTrabajo": { "maxima": 7302, "umbralInferior": 14852, "umbralSuperior": 19747.5, "pendiente": 1.75 },
+    "escala": [
+      { "hasta": 12450, "tipo": 0.19 },
+      { "hasta": 20200, "tipo": 0.24 },
+      { "hasta": 35200, "tipo": 0.30 },
+      { "hasta": 60000, "tipo": 0.37 },
+      { "hasta": 300000, "tipo": 0.45 },
+      { "hasta": null, "tipo": 0.47 }
+    ],
+    "_nota": "Aproximación didáctica: soltero/a sin hijos. Para la retención exacta, simulador de retenciones de la AEAT."
+  },
+  "referencias": {
+    "tasaEsfuerzoRecomendada": 35,
+    "regla503020": { "necesidades": 50, "deseos": 30, "ahorro": 20 },
+    "colchonRecomendadoMeses": 3
+  },
+  "imprevistos": [
+    { "nombre": "Avería del móvil", "coste": 150, "probabilidadMensual": 0.06 },
+    { "nombre": "Multa de tráfico o transporte", "coste": 100, "probabilidadMensual": 0.04 },
+    { "nombre": "Dentista", "coste": 120, "probabilidadMensual": 0.05 },
+    { "nombre": "Boda o viaje con amigos", "coste": 250, "probabilidadMensual": 0.06 },
+    { "nombre": "Factura de luz alta (invierno o verano)", "coste": 60, "probabilidadMensual": 0.15 },
+    { "nombre": "Reparación de la bici o el coche", "coste": 200, "probabilidadMensual": 0.04 }
+  ]
+}
