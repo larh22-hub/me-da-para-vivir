@@ -1,0 +1,102 @@
+/*
+ * Estilo Google (Material 3) para el simulador "¿Me da para vivir?"
+ * Pegar dentro de <style> o enlazar. Tipografías servidas por Google Fonts.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Code:wght@400;500&display=swap');
+
+:root {
+  /* Tipografía */
+  --font-sans: 'Google Sans', 'Google Sans Flex', Roboto, Arial, sans-serif;
+  --font-mono: 'Google Sans Code', 'Roboto Mono', ui-monospace, monospace;
+
+  /* Color (Material 3, paleta azul Google) */
+  --md-primary: #0b57d0;
+  --md-on-primary: #ffffff;
+  --md-primary-container: #d3e3fd;
+  --md-on-primary-container: #041e49;
+  --md-secondary-container: #c2e7ff;
+  --md-surface: #f8fafd;
+  --md-surface-container: #f0f4f9;
+  --md-surface-container-high: #e9eef6;
+  --md-on-surface: #1f1f1f;
+  --md-on-surface-variant: #444746;
+  --md-outline: #747775;
+  --md-outline-variant: #c4c7c5;
+  --md-success: #146c2e;
+  --md-success-container: #c4eed0;
+  --md-warning: #b06000;
+  --md-warning-container: #ffdf99;
+  --md-error: #b3261e;
+  --md-error-container: #f9dedc;
+
+  /* Forma y elevación */
+  --md-radius-s: 8px;
+  --md-radius-m: 12px;
+  --md-radius-l: 16px;
+  --md-radius-xl: 28px;
+  --md-radius-full: 999px;
+  --md-elev-1: 0 1px 2px rgba(0,0,0,.3), 0 1px 3px 1px rgba(0,0,0,.15);
+  --md-elev-2: 0 1px 2px rgba(0,0,0,.3), 0 2px 6px 2px rgba(0,0,0,.15);
+
+  /* Escala tipográfica (Material 3) */
+  --md-display-s: 500 36px/44px var(--font-sans);
+  --md-headline-s: 400 24px/32px var(--font-sans);
+  --md-title-m: 500 16px/24px var(--font-sans);
+  --md-body-l: 400 16px/24px var(--font-sans);
+  --md-body-m: 400 14px/20px var(--font-sans);
+  --md-label-l: 500 14px/20px var(--font-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-primary: #a8c7fa;
+    --md-on-primary: #062e6f;
+    --md-primary-container: #0842a0;
+    --md-on-primary-container: #d3e3fd;
+    --md-secondary-container: #004a77;
+    --md-surface: #131314;
+    --md-surface-container: #1e1f20;
+    --md-surface-container-high: #282a2c;
+    --md-on-surface: #e3e3e3;
+    --md-on-surface-variant: #c4c7c5;
+    --md-outline: #8e918f;
+    --md-outline-variant: #444746;
+    --md-success: #6dd58c;
+    --md-success-container: #0f5223;
+    --md-warning: #ffb95c;
+    --md-warning-container: #5c3200;
+    --md-error: #f2b8b5;
+    --md-error-container: #8c1d18;
+  }
+}
+
+body { margin: 0; background: var(--md-surface); color: var(--md-on-surface); font: var(--md-body-l); }
+h1 { font: var(--md-display-s); } h2 { font: var(--md-headline-s); } h3 { font: var(--md-title-m); }
+.cifra, .nomina td, output { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* Tarjeta */
+.card { background: var(--md-surface-container); border-radius: var(--md-radius-l); padding: 20px; }
+.card--elevada { background: #fff; box-shadow: var(--md-elev-1); }
+
+/* Botones */
+.btn { font: var(--md-label-l); border: 0; border-radius: var(--md-radius-full); padding: 10px 24px; cursor: pointer; min-height: 40px; }
+.btn--filled { background: var(--md-primary); color: var(--md-on-primary); }
+.btn--tonal { background: var(--md-secondary-container); color: var(--md-on-primary-container); }
+.btn--outlined { background: transparent; color: var(--md-primary); border: 1px solid var(--md-outline); }
+.btn:focus-visible { outline: 3px solid var(--md-primary); outline-offset: 2px; }
+
+/* Chips (niveles, opciones) */
+.chip { font: var(--md-label-l); border: 1px solid var(--md-outline-variant); border-radius: var(--md-radius-s); padding: 6px 16px; background: transparent; color: var(--md-on-surface-variant); }
+.chip[aria-pressed="true"] { background: var(--md-secondary-container); border-color: transparent; color: var(--md-on-primary-container); }
+
+/* Campos y deslizadores */
+input[type="number"], input[type="text"], select, textarea { font: var(--md-body-l); border: 1px solid var(--md-outline); border-radius: var(--md-radius-s); padding: 10px 12px; background: transparent; color: var(--md-on-surface); }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--md-primary); border-color: transparent; }
+input[type="range"] { accent-color: var(--md-primary); width: 100%; }
+
+/* Feedback */
+.feedback--ok { background: var(--md-success-container); color: var(--md-on-surface); border-radius: var(--md-radius-m); padding: 12px 16px; }
+.feedback--aviso { background: var(--md-warning-container); color: var(--md-on-surface); border-radius: var(--md-radius-m); padding: 12px 16px; }
+.feedback--error { background: var(--md-error-container); color: var(--md-on-surface); border-radius: var(--md-radius-m); padding: 12px 16px; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
